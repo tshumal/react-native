@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import EventList from './src/screens/EventList'
+import AppNavigation from "./src/navigation";
+import { createAppContainer } from 'react-navigation';
 
-export default function App() {
-  return (
-<EventList />
-  );
+const AppContainer = createAppContainer(AppNavigation);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
 }
 
 
