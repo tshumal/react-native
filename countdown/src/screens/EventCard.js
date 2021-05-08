@@ -46,11 +46,7 @@ export default function EventCard({ event }) {
                 </View>
             </View>
         </View>
-
-
     );
-
-
 }
 
 const styles = StyleSheet.create({

@@ -4,8 +4,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import EventList from '../screens/EventList';
 import EventForm from '../screens/EventForm';
 
-
-export default AppNavigation (
+const AppNavigator = createStackNavigator (
     {
       list: { 
           screen: EventList,
@@ -25,5 +24,5 @@ export default AppNavigation (
       //headerMode: 'none',
     }
   );
-  
-  //export default createAppContainer(AppNavigation);
+
+  export default createAppContainer(AppNavigator);
