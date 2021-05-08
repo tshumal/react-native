@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet } from 'react-native'
 import ActionButton from 'react-native-action-button';
+import { getEvents } from '../util/api';
 
 import EventCard from './EventCard';
 
@@ -24,11 +25,7 @@ class EventList extends Component {
             });
           }, 1000);
 
-        const events = require('../util/db.json').events.map(e => ({
-            ...e,
-            date: new Date(e.date),
-        }));
-        this.setState({ events });
+        getEvents().then(events => this.setState({ events }));    
     }
 
     render() {
