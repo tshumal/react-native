@@ -1,0 +1,12 @@
+{
+  "name": "react-native-amplify-events-app",
+  "displayName": "react-native-amplify-events-app",
+  "expo": {
+    "name": "react-native-amplify-events-app",
+    "slug": "react-native-amplify-events-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
