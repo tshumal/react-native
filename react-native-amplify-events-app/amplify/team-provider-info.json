@@ -10,6 +10,18 @@
       "StackName": "amplify-eventsapp-dev-170115",
       "StackId": "arn:aws:cloudformation:ap-south-1:023146746169:stack/amplify-eventsapp-dev-170115/3ac4dff0-b4c5-11eb-8d1a-0afa4eceb684",
       "AmplifyAppId": "d9vqglxciectk"
+    },
+    "categories": {
+      "auth": {
+        "eventsappc371a01c": {}
+      },
+      "function": {
+        "eventsappc371a01cPostConfirmation": {
+          "GROUP": "admin",
+          "deploymentBucketName": "amplify-eventsapp-dev-170115-deployment",
+          "s3Key": "amplify-builds/eventsappc371a01cPostConfirmation-356552665a367471504e-build.zip"
+        }
+      }
     }
   }
 }
